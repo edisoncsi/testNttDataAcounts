@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "e5cf4dae-a8ee-403b-88cf-5b9e5806a4b7",
+		"name": "PruebaNttData",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19407113"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Edison\",\n    \"genero\":\"masculino\",\n    \"edad\":33,\n    \"identificacion\":\"1002003001\",\n    \"direccion\":\"Ibara\",\n    \"telefono\":\"0984637291\",\n    \"password\":\"234567\",\n    \"estado\":\"true\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5000/clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/cuentas/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero_cuenta\":\"232515\",\n    \"tipo_cuenta\":\"ahorro\",\n    \"saldo_inicial\":3456.0,\n    \"estado\":\"true\",\n    \"cliente_nombre\":\"Edison\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5001/cuentas/"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/cuentas/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5001/cuentas/"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/movimientos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numero_cuenta\":\"232515\",\n    \"tipo_movimiento\":\"ahorro\",\n    \"valor\": -5445,\n    \"estado\":\"true\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5001/movimientos/"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/movimientos/232553",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"valor\":-2000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5001/movimientos/232553"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5001/reportes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cliente\":\"Edison\",\n    \"fecha\":\"14-03-2024\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:5001/reportes"
+			},
+			"response": []
+		}
+	]
+}
