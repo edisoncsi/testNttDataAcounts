@@ -8,6 +8,12 @@ If you want to import these project into the local eclipse setup -
   2. Unzip the project at your desired location
   3. Open the project into intellij
 
+## Test API in Postman    
+
+In the project folder run database:  
+
+    docker-compose up -d
+
 ## Test API in Postman
 
 Lad file PruebaNttData.postman_collection.json in postman
