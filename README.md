@@ -8,11 +8,27 @@ If you want to import these project into the local eclipse setup -
   2. Unzip the project at your desired location
   3. Open the project into intellij
 
-## Run Database     
+## Commands
 
-In the project folder run database:  
+ CREA LOS TARGET DE PROYETO
 
-    docker-compose up -d
+    mvn clean install -DskipTests
+
+CREAR EL BUILD DEL DOCKERFILE
+
+    docker build -t mov .
+
+CREAR LA CARPETA PARA LA DATA DE LA BDD
+
+    mkdir -p shared/mysql_data
+
+EJECUTAR EL COMPOSE
+
+    sudo docker-compose up -d
+
+TERMINAR LOS CONTENEDORES
+
+    docker-compose down
 
 ## Test API in Postman
 
