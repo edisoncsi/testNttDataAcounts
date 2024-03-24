@@ -29,6 +29,7 @@ import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/clientes")
+@CrossOrigin(origins = "http://host.docker.internal:5001")
 public class ClienteController {
     private final Logger logger = Logger.getLogger(ClienteController.class.getName());
 
