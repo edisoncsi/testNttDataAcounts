@@ -7,10 +7,10 @@ MAINTAINER Edison Collaguazo "edisoncsi@hotmail.com"
 WORKDIR /app
 
 # Copia los JARs de tus aplicaciones al contenedor
-COPY target/account.client-1.0.0.jar /app/account-client.jar
+COPY target/account.mov-1.0.0.jar /app/account-mov.jar
 
 # Expone los puertos en los que se ejecutan tus aplicaciones
-EXPOSE 5000
+EXPOSE 5001
 
 # Comando para ejecutar tus aplicaciones cuando el contenedor se inicie
-ENTRYPOINT ["java", "-jar", "account-client.jar"]
+ENTRYPOINT ["java", "-jar", "account-mov.jar"]
